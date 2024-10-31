@@ -1,0 +1,452 @@
+.pythia .content-center-py,
+.pythia {
+    .btn-py {
+        background: $green;
+        border-radius: 3px;
+        color: #0E1B26;
+        align-self: center;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        height: 44px;
+        width: 100%;
+        text-transform: uppercase;
+        display: block;
+        &.w-330 {
+            max-width: 330px;
+        }
+        &:hover {
+            background: $green-blinding;
+        }
+        &disabled:hover {
+            background: $green;
+            cursor: not-allowed;
+        }
+    }
+    .btn-dark-py {
+        background: $btn-dark;
+        border-radius: 3px;
+        color: white;
+        align-self: center;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        height: 44px;
+        width: 100%;
+        text-transform: uppercase;
+        display: block;
+        &:hover {
+            background: $green-blinding;
+        }
+        &:disabled:hover {
+            background: $btn-dark !important;
+            cursor: not-allowed;
+        }
+    }
+    .btn-grey {
+        background: $label-grey;
+        color: $color-dark-grey;
+        border-radius: 3px;
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 24px;
+        height: 44px;
+        width: 100%;
+        &:hover {
+            background: $green;
+        }
+        &:disabled:hover {
+            background: $btn-dark !important;
+            cursor: not-allowed;
+        }
+    }
+    .btn-reset {
+        background: transparent;
+        color: $color-label;
+        border-radius: 3px;
+        font-family: $primary-font;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 24px;
+        height: 44px;
+        border: 2px solid $color-label;
+        &:hover {
+            background: $color-label;
+            color: $color-dark-blue;
+        }
+        &:disabled:hover {
+            background: $btn-dark !important;
+            cursor: not-allowed;
+        }
+    }
+    .btn-group-py {
+        margin-top: 20px;
+        button {
+            width: auto;
+            display: inline-block;
+        }
+    }
+    h1 {
+        font-size: 36px;
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 36px;
+        color: white;
+    }
+    h2 {
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+    }
+    h3 {
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 36px;
+        color: white;
+    }
+    p {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-label;
+        margin: auto;
+    }
+    a {
+        color: $green;
+        text-decoration: none;
+        &:hover {
+            color: $green-blinding;
+            text-decoration: none;
+        }
+        &.btn-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            i {
+                color: #72777C;
+            }
+        }
+        &.arrow-right {
+            color: white;
+            font-size: 14px;
+            position: relative;
+            &::after {
+                content: "\f061";
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                margin-left: 8px;
+                font-family: 'FontAwesome';
+                font-weight: 900;
+            }
+            &:hover {
+                color: $green;
+                text-decoration: none;
+            }
+        }
+    }
+    ol {
+        padding-left: 0px;
+        .py-indicator__circle {
+            display: inline-block;
+            position: relative;
+            width: 19px;
+            height: 19px;
+            border-radius: 9999px;
+            border: 2px dashed #8f9aac;
+            &.active {
+                border: 2px dashed $green;
+                &:before {
+                    background-color: $green;
+                }
+            }
+            &:first-child {
+                position: absolute;
+                top: 10px;
+                left: -43px;
+            }
+            &:last-child {
+                position: absolute;
+                left: -43px;
+                top: 137px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                border-radius: 9999px;
+                background-color: #8f9aac;
+                width: 7px;
+                height: 7px;
+            }
+            &:after {
+                content: "";
+                content: '';
+                clear: both;
+                display: table;
+            }
+        }
+        &:after {
+            content: '';
+            border: 1px dashed #8f9aac;
+            position: absolute;
+            left: -397px;
+            right: 0;
+            margin: auto;
+            top: 33%;
+            width: 35%;
+            z-index: -1;
+            transform: rotate(90deg);
+        }
+    }
+    // FORM
+    .form-content {
+        display: inline-block;
+        .form-group {
+            .col-5 {
+                padding-left: 0px;
+            }
+            margin-bottom: 1.5rem;
+            label {
+                color: $color-label;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 3px;
+                &.error {
+                    color: $color-error;
+                    margin-top: 4px;
+                    margin-bottom: 0;
+                }
+            }
+            input {
+                border: none;
+                height: 44px;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: $color-input;
+                &:focus {
+                    outline: 0;
+                    box-shadow: 0 0 0 0.2rem $green;
+                }
+                &.error {
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem $color-error;
+                    }
+                }
+            }
+            small {
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: lighter;
+                font-size: 12px;
+                line-height: 18px;
+                color: $color-label;
+                margin-top: 10px;
+            }
+        }
+    }
+    #password-strength {
+        color: white;
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: center;
+        &.short {
+            border-bottom: 3px solid $color-error;
+        }
+        &.bad {
+            border-bottom: 3px solid #FFD800;
+        }
+        &.good {
+            border-bottom: 3px solid green;
+        }
+        &.strong {
+            border-bottom: 3px solid #19d69b;
+        }
+    }
+    .styled-checkbox {
+        position: absolute; // take it out of document flow
+        opacity: 0; // hide it
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #8398AA;
+        }
+        // Box.
+        &+label:before {
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            background: white;
+        }
+        // Box hover
+        &:hover+label:before {
+            background: $green;
+        }
+        // Box focus
+        &:focus+label:before {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+        // Box checked
+        &:checked+label:before {
+            background: $green;
+        }
+        // Disabled state label.
+        &:disabled+label {
+            color: #b8b8b8;
+            cursor: auto;
+        }
+        // Disabled box.
+        &:disabled+label:before {
+            box-shadow: none;
+            background: #ddd;
+        }
+        // Checkmark. Could be replaced with an image
+        &:checked+label:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 12px;
+            background: $color-dark-blue;
+            width: 2px;
+            height: 2px;
+            box-shadow: 2px 0 0 $color-dark-blue, 4px 0 0 $color-dark-blue, 4px -2px 0 $color-dark-blue, 4px -4px 0 $color-dark-blue, 4px -6px 0 $color-dark-blue, 4px -8px 0 $color-dark-blue;
+            transform: rotate(45deg);
+        }
+    }
+    @media (max-width:767px) {
+        .btn-py {
+            font-size: 11px;
+        }
+        .btn-grey {
+            font-size: 11px;
+        }
+        .btn-reset {
+            font-size: 11px;
+        }
+    }
+    .ui-progressbar {
+        height: 12px;
+        text-align: left;
+        overflow: hidden;
+        /* Line */
+        background: #2E4757;
+        border-radius: 10px;
+    }
+    .ui-progressbar .ui-progressbar-value {
+        margin: -1px;
+        height: 100%;
+    }
+    .ui-progressbar .ui-progressbar-overlay {
+        background: url("data:image/gif;base64,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");
+        height: 100%;
+        filter: alpha(opacity=25);
+        /* support: IE8 */
+        opacity: 0.25;
+    }
+    .ui-progressbar-indeterminate .ui-progressbar-value {
+        background-image: none;
+    }
+    .ui-widget-header {
+        border: 1px solid #18D69C;
+        color: #333333;
+        font-weight: bold;
+        /* Gradient */
+        background: linear-gradient(178.43deg, #18D69C 7.96%, #A5E729 131.34%);
+        border-radius: 10px;
+    }
+}
+
+.ui-dialog {
+    .ui-dialog-titlebar {
+        background: #0E1B26;
+        color: white;
+        font-weight: 100;
+        padding: 5px 25px;
+        height: auto;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 1px solid #8398AA;
+    }
+    .ui-dialog-content {
+        background: $color-dark-blue;
+        color: $color-label;
+    }
+    .ui-dialog-buttonpane {
+        background: $color-dark-blue;
+        border-top: 1px solid $color-label;
+        button:nth-of-type(1) {
+            background: #19d69b;
+            font-size: 13px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #0E1B26;
+            font-weight: 500;
+            box-shadow: none;
+            border: none;
+            padding: 3px 30px;
+            height: auto;
+            &:hover {
+                background-color: $green-blinding;
+            }
+        }
+        button:nth-of-type(2) {
+            background: transparent;
+            font-size: 13px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #8398AA;
+            font-weight: 500;
+            box-shadow: none;
+            border: none;
+            border: 1px solid;
+            height: auto;
+            padding: 2px 30px;
+            &:hover {
+                color: $color-dark-blue;
+                background: $color-label;
+            }
+        }
+    }
+}
+
+.wp-admin {
+    a {
+        color: $green;
+        text-decoration: none;
+        &:hover {
+            color: $green-blinding;
+            text-decoration: none;
+        }
+    }
+}

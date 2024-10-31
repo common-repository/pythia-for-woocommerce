@@ -1,0 +1,63 @@
+.pythia .content-center-py {
+    text-align: center;
+    .group-register {
+        &.w-330 {
+            max-width: 330px;
+            margin: 0 auto;
+            position: relative;
+            .btn-py {
+                margin: 50px auto;
+                &.disabled {
+                    margin: 20px auto;
+                    &:hover {
+                        background: $green;
+                    }
+                }
+            }
+            .btn-dark-py {
+                margin: 50px auto;
+            }
+            label {
+                display: block;
+                color: $label-grey;
+                font-size: 14px;
+                text-align: left;
+            }
+            select {
+                border: none;
+                height: 44px;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: $color-input;
+                max-width: 330px;
+                &:focus {
+                    outline: 0;
+                    box-shadow: 0 0 0 0.2rem $green;
+                }
+                &.error {
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem $color-error;
+                    }
+                }
+            }
+            .form-control:disabled,
+            .form-control[readonly] {
+                background-color: #e9ecef;
+                opacity: 0.5;
+                height: 44px;
+            }
+        }
+    }
+    button, a {
+        margin: 20px auto;
+	}
+	a {
+		line-height: 32px;
+		&:hover {
+			color: #0e1b26;
+		}
+    }
+}

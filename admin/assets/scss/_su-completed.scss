@@ -1,0 +1,27 @@
+.pythia .su-completed {
+    .row.justify-content-center {
+        background: linear-gradient(180deg, rgba(14, 27, 38, 0) 15.25%, rgba(14, 27, 38, 0.3) 22.54%, rgba(14, 27, 38, 0.7) 28.27%, #0E1B26 39.21%);
+        height: 800px;
+        z-index: 99;
+        .bg-androide {
+            background-image: url(../img/androide2.png);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 400px;
+        }
+        .col-md-8.col-12.text-center {
+            position: absolute;
+            top: 360px;
+            img {
+                width: 200px;
+                margin-bottom: 5px;
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

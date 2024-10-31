@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .pythia .sign-up {
+        background-image: none;
+        background-size: 0px;
+    }
+    .sign-up {
+        .col-md-10.col-12 {
+            display: contents;
+            .form-content {
+                order: 2;
+            }
+            .welcome {
+                order: 1;
+            }
+        }
+    }
+}

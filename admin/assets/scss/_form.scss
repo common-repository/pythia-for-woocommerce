@@ -1,0 +1,32 @@
+.pythia .sign-up {
+    background-image: url(../img/androide.png);
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: 100%;
+    min-height: 550px;
+    .form-content {
+        float: left;
+        display: inline-block;
+    }
+    .welcome {
+        display: inline-block;
+        padding-left: 3%;
+        h2 {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 36px;
+            color: white;
+        }
+        p {
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-label;
+        }
+    }
+}

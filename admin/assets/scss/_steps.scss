@@ -1,0 +1,425 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #0E1B26 !important;
+}
+
+.js-pyStepz.py-stepz.col-md-10 {
+    margin: auto;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.pythia .py-wrapper {
+    max-width: 992px;
+    margin: 0 auto
+}
+
+.pythia .py-header {
+    text-align: center;
+    min-height: 130px;
+    padding: 20px 15px;
+    margin-bottom: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.pythia .no-padding {
+    padding: 0;
+}
+
+.pythia .py-logo {
+    max-width: 270px;
+}
+
+.pythia .py-indicator {
+    max-width: 910px;
+    margin: 0 auto 50px;
+}
+
+.pythia .py-indicator ul {
+    list-style: none;
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.pythia .py-indicator ul:after {
+    content: '';
+    border: 1px dashed #8f9aac;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    margin: auto;
+    top: 17%;
+    width: 76%;
+    z-index: -1;
+}
+
+.pythia .py-indicator ul li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.pythia .py-indicator ul li:last-child:after {
+    display: none;
+}
+
+.pythia .py-indicator__circle {
+    display: inline-block;
+    position: relative;
+    width: 19px;
+    height: 19px;
+    border-radius: 9999px;
+    border: 2px dashed $regent-gray;
+    background: $color-dark-blue;
+}
+
+.pythia .py-indicator__circle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 9999px;
+    background-color: $regent-gray;
+    width: 7px;
+    height: 7px;
+}
+
+.pythia .py-indicator__circle:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.pythia {
+    .py-indicator__act {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        color: $regent-gray;
+        &:hover {
+            text-decoration: none;
+        }
+        @media screen and(min-width: 48em) {
+            font-size: 14px;
+        }
+    }
+}
+
+.pythia .py-indicator ul li {
+    &.py-active {
+        .py-indicator__circle {
+            border: 2px dashed $green;
+        }
+        .py-indicator__circle::before {
+            background-color: $green
+        }
+        .py-indicator__act {
+            color: $green;
+        }
+    }
+    &.py-passed {
+        .py-indicator__circle::before {
+            background-color: $green
+        }
+    }
+}
+
+.box-white {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    padding: 37px 33px;
+    border-radius: 5px;
+}
+
+// .pythia h1,
+// .pythia h2,
+// .pythia h3,
+// .pythia h4,
+// .pythia h5 {
+//     font-family: 'Rubik', sans-serif;
+//     font-weight: 500;
+//     line-height: 1.2;
+//     margin-bottom: 0.5rem;
+// }
+.pythia h1,
+.h1 {
+    font-size: 2.5rem;
+}
+
+// .pythia h2,
+// .pythia .h2 {
+//     font-size: 2rem;
+// }
+.pythia h3,
+.pythia .h3 {
+    font-size: 1.75rem;
+}
+
+.pythia h4,
+.pythia .h4 {
+    font-size: 1.5rem;
+}
+
+.pythia h5,
+.pythia .h5 {
+    font-size: 1.25rem;
+}
+
+.pythia h6,
+.pythia .h6 {
+    font-size: 1rem;
+}
+
+.pythia .pytitle-green {
+    color: $green;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 1.4rem;
+}
+
+.pythia .pylist-icons ul,
+.pythia .pylist-icons li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pythia .pylist-icons li {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.pythia .pylist-icons__img {
+    float: left;
+    width: 40px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.pythia .py-content {
+    margin-bottom: 37px;
+    display: flex;
+}
+
+.pythia .py-alert {
+    color: #32373C;
+    background-color: white;
+    padding: .5rem 1.25rem;
+    border-radius: 0;
+    max-width: 406px;
+    width: 100%;
+    font-size: 13px;
+    position: fixed;
+    top: 36px;
+    right: 0;
+    border-left: 5px solid;
+    z-index: 1;
+    >span {
+        line-height: 1.3em;
+    }
+    @media screen and (min-width: 62em) {
+        max-width: 470px;
+    }
+    &.py-alert-success {
+        border-left: 5px solid $green;
+        span::before {
+            color: $green;
+        }
+        .py-success-message {
+            vertical-align: text-bottom;
+        }
+    }
+    &.py-alert-error {
+        border-left: 5px solid $color-error;
+        span::before {
+            color: $color-error;
+        }
+        .py-error-message {
+            vertical-align: text-bottom;
+        }
+    }
+}
+
+.pythia .py-alert__icon {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.pythia {
+    .py-keyz {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: #bbbbbb;
+        color: white;
+        word-wrap: break-word;
+    }
+    .py-keyz__icon {
+        width: 80px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #aaaaaa;
+        text-align: center;
+        flex: 0 0 80px;
+        max-width: 80px;
+        img {
+            width: 45px;
+        }
+    }
+    .py-keyz__main {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 15px;
+        display: block;
+        max-width: 92%;
+        overflow: hidden;
+        span {
+            display: block;
+        }
+    }
+}
+
+
+/* Steps js Custom*/
+
+.js-pyStepz__title {
+    display: none;
+}
+
+.py-stepz {
+    .steps {
+        .number {
+            display: none;
+        }
+        .current-info {
+            display: none;
+        }
+        ul {
+            li {
+                a:hover {
+                    text-decoration: none;
+                }
+                &.current {
+                    .py-indicator__circle::before {
+                        background-color: $green
+                    }
+                    .py-indicator__act {
+                        color: $green;
+                    }
+                }
+                &.done {
+                    .py-indicator__circle::before {
+                        background-color: $green
+                    }
+                }
+            }
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.pythia {
+    ul.py-step-action {
+        list-style: none;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        @media screen and (min-width: 62em) {
+            margin: 0 -15px 40px;
+        }
+        li {
+            list-style: none;
+            text-align: right;
+            margin-bottom: 15px;
+            &:first-child {
+                text-align: left;
+                >a {
+                    background: transparent;
+                    color: #e27233;
+                    box-shadow: none;
+                    padding: 0;
+                    min-width: auto;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: underline
+                    }
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 62em) {
+            li {
+                text-align: center !important;
+            }
+        }
+    }
+}
+
+
+/*Error Alert*/
+
+.form-content .form-group label.error {
+    display: block !important;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 400 !important;
+    color: $color-red;
+    margin-top: 0px;
+}
+
+.form-content .form-group input.form-control.error {
+    box-shadow: 0 0 0 0.2rem $color-error;
+}
+
+button button:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+/*Preloader */
+
+main.pythia {
+    min-height: 100vh;
+}
+
+.se-pre-con {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(26, 43, 54, 0.8) url('../img/loading.svg') center center no-repeat;
+    background-size: 80px auto;
+    background-position-y: 44vh;
+}
+
+// }

@@ -1,0 +1,832 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+/**
+ * Variables and Bootstrap overrides
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+.pythia .btn-py {
+  background: #19d69b;
+  border-radius: 3px;
+  color: #0E1B26;
+  align-self: center;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  height: 44px;
+  width: 100%;
+  text-transform: uppercase;
+  display: block; }
+  .pythia .btn-py.w-330 {
+    max-width: 330px; }
+  .pythia .btn-py:hover {
+    background: #67DE6F; }
+  .pythia .btn-pydisabled:hover {
+    background: #19d69b;
+    cursor: not-allowed; }
+.pythia .btn-dark-py {
+  background: #1A2B36;
+  border-radius: 3px;
+  color: white;
+  align-self: center;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  height: 44px;
+  width: 100%;
+  text-transform: uppercase;
+  display: block; }
+  .pythia .btn-dark-py:hover {
+    background: #67DE6F; }
+  .pythia .btn-dark-py:disabled:hover {
+    background: #1A2B36 !important;
+    cursor: not-allowed; }
+.pythia .btn-grey {
+  background: #7E8993;
+  color: #0E1B26;
+  border-radius: 3px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  height: 44px;
+  width: 100%; }
+  .pythia .btn-grey:hover {
+    background: #19d69b; }
+  .pythia .btn-grey:disabled:hover {
+    background: #1A2B36 !important;
+    cursor: not-allowed; }
+.pythia .btn-reset {
+  background: transparent;
+  color: #8398AA;
+  border-radius: 3px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  height: 44px;
+  border: 2px solid #8398AA; }
+  .pythia .btn-reset:hover {
+    background: #8398AA;
+    color: #0E1B26; }
+  .pythia .btn-reset:disabled:hover {
+    background: #1A2B36 !important;
+    cursor: not-allowed; }
+.pythia .btn-group-py {
+  margin-top: 20px; }
+  .pythia .btn-group-py button {
+    width: auto;
+    display: inline-block; }
+.pythia h1 {
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 36px;
+  color: white; }
+.pythia h2 {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 36px;
+  color: white; }
+.pythia h3 {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 36px;
+  color: white; }
+.pythia p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8398AA;
+  margin: auto; }
+.pythia a {
+  color: #19d69b;
+  text-decoration: none; }
+  .pythia a:hover {
+    color: #67DE6F;
+    text-decoration: none; }
+  .pythia a.btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .pythia a.btn-close i {
+      color: #72777C; }
+  .pythia a.arrow-right {
+    color: white;
+    font-size: 14px;
+    position: relative; }
+    .pythia a.arrow-right::after {
+      content: "\f061";
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-left: 8px;
+      font-family: 'FontAwesome';
+      font-weight: 900; }
+    .pythia a.arrow-right:hover {
+      color: #19d69b;
+      text-decoration: none; }
+.pythia ol {
+  padding-left: 0px; }
+  .pythia ol .py-indicator__circle {
+    display: inline-block;
+    position: relative;
+    width: 19px;
+    height: 19px;
+    border-radius: 9999px;
+    border: 2px dashed #8f9aac; }
+    .pythia ol .py-indicator__circle.active {
+      border: 2px dashed #19d69b; }
+      .pythia ol .py-indicator__circle.active:before {
+        background-color: #19d69b; }
+    .pythia ol .py-indicator__circle:first-child {
+      position: absolute;
+      top: 10px;
+      left: -43px; }
+    .pythia ol .py-indicator__circle:last-child {
+      position: absolute;
+      left: -43px;
+      top: 137px; }
+    .pythia ol .py-indicator__circle:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      border-radius: 9999px;
+      background-color: #8f9aac;
+      width: 7px;
+      height: 7px; }
+    .pythia ol .py-indicator__circle:after {
+      content: "";
+      content: '';
+      clear: both;
+      display: table; }
+  .pythia ol:after {
+    content: '';
+    border: 1px dashed #8f9aac;
+    position: absolute;
+    left: -397px;
+    right: 0;
+    margin: auto;
+    top: 33%;
+    width: 35%;
+    z-index: -1;
+    transform: rotate(90deg); }
+.pythia .form-content {
+  display: inline-block; }
+  .pythia .form-content .form-group {
+    margin-bottom: 1.5rem; }
+    .pythia .form-content .form-group .col-5 {
+      padding-left: 0px; }
+    .pythia .form-content .form-group label {
+      color: #8398AA;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 3px; }
+      .pythia .form-content .form-group label.error {
+        color: #e51a2e;
+        margin-top: 4px;
+        margin-bottom: 0; }
+    .pythia .form-content .form-group input {
+      border: none;
+      height: 44px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #32373C; }
+      .pythia .form-content .form-group input:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem #19d69b; }
+      .pythia .form-content .form-group input.error:focus {
+        box-shadow: 0 0 0 0.2rem #e51a2e; }
+    .pythia .form-content .form-group small {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 12px;
+      line-height: 18px;
+      color: #8398AA;
+      margin-top: 10px; }
+.pythia #password-strength {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center; }
+  .pythia #password-strength.short {
+    border-bottom: 3px solid #e51a2e; }
+  .pythia #password-strength.bad {
+    border-bottom: 3px solid #FFD800; }
+  .pythia #password-strength.good {
+    border-bottom: 3px solid green; }
+  .pythia #password-strength.strong {
+    border-bottom: 3px solid #19d69b; }
+.pythia .styled-checkbox {
+  position: absolute;
+  opacity: 0; }
+  .pythia .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8398AA; }
+  .pythia .styled-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white; }
+  .pythia .styled-checkbox:hover + label:before {
+    background: #19d69b; }
+  .pythia .styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12); }
+  .pythia .styled-checkbox:checked + label:before {
+    background: #19d69b; }
+  .pythia .styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto; }
+  .pythia .styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd; }
+  .pythia .styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    background: #0E1B26;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #0E1B26, 4px 0 0 #0E1B26, 4px -2px 0 #0E1B26, 4px -4px 0 #0E1B26, 4px -6px 0 #0E1B26, 4px -8px 0 #0E1B26;
+    transform: rotate(45deg); }
+@media (max-width: 767px) {
+  .pythia .btn-py {
+    font-size: 11px; }
+  .pythia .btn-grey {
+    font-size: 11px; }
+  .pythia .btn-reset {
+    font-size: 11px; } }
+.pythia .ui-progressbar {
+  height: 12px;
+  text-align: left;
+  overflow: hidden;
+  /* Line */
+  background: #2E4757;
+  border-radius: 10px; }
+.pythia .ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 100%; }
+.pythia .ui-progressbar .ui-progressbar-overlay {
+  background: url("data:image/gif;base64,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");
+  height: 100%;
+  filter: alpha(opacity=25);
+  /* support: IE8 */
+  opacity: 0.25; }
+.pythia .ui-progressbar-indeterminate .ui-progressbar-value {
+  background-image: none; }
+.pythia .ui-widget-header {
+  border: 1px solid #18D69C;
+  color: #333333;
+  font-weight: bold;
+  /* Gradient */
+  background: linear-gradient(178.43deg, #18D69C 7.96%, #A5E729 131.34%);
+  border-radius: 10px; }
+
+.ui-dialog .ui-dialog-titlebar {
+  background: #0E1B26;
+  color: white;
+  font-weight: 100;
+  padding: 5px 25px;
+  height: auto;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #8398AA; }
+.ui-dialog .ui-dialog-content {
+  background: #0E1B26;
+  color: #8398AA; }
+.ui-dialog .ui-dialog-buttonpane {
+  background: #0E1B26;
+  border-top: 1px solid #8398AA; }
+  .ui-dialog .ui-dialog-buttonpane button:nth-of-type(1) {
+    background: #19d69b;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #0E1B26;
+    font-weight: 500;
+    box-shadow: none;
+    border: none;
+    padding: 3px 30px;
+    height: auto; }
+    .ui-dialog .ui-dialog-buttonpane button:nth-of-type(1):hover {
+      background-color: #67DE6F; }
+  .ui-dialog .ui-dialog-buttonpane button:nth-of-type(2) {
+    background: transparent;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #8398AA;
+    font-weight: 500;
+    box-shadow: none;
+    border: none;
+    border: 1px solid;
+    height: auto;
+    padding: 2px 30px; }
+    .ui-dialog .ui-dialog-buttonpane button:nth-of-type(2):hover {
+      color: #0E1B26;
+      background: #8398AA; }
+
+.wp-admin a {
+  color: #19d69b;
+  text-decoration: none; }
+  .wp-admin a:hover {
+    color: #67DE6F;
+    text-decoration: none; }
+
+.pythia .header-logo {
+  text-align: center;
+  padding: 40px 0px; }
+  .pythia .header-logo img {
+    width: 200px; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0E1B26 !important; }
+
+.js-pyStepz.py-stepz.col-md-10 {
+  margin: auto; }
+
+strong {
+  font-weight: 500; }
+
+.pythia .py-wrapper {
+  max-width: 992px;
+  margin: 0 auto; }
+
+.pythia .py-header {
+  text-align: center;
+  min-height: 130px;
+  padding: 20px 15px;
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center; }
+
+.pythia .no-padding {
+  padding: 0; }
+
+.pythia .py-logo {
+  max-width: 270px; }
+
+.pythia .py-indicator {
+  max-width: 910px;
+  margin: 0 auto 50px; }
+
+.pythia .py-indicator ul {
+  list-style: none;
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 280px;
+  margin: 0 auto; }
+
+.pythia .py-indicator ul:after {
+  content: '';
+  border: 1px dashed #8f9aac;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  margin: auto;
+  top: 17%;
+  width: 76%;
+  z-index: -1; }
+
+.pythia .py-indicator ul li {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: center; }
+
+.pythia .py-indicator ul li:last-child:after {
+  display: none; }
+
+.pythia .py-indicator__circle {
+  display: inline-block;
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border-radius: 9999px;
+  border: 2px dashed #8f9aac;
+  background: #0E1B26; }
+
+.pythia .py-indicator__circle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 9999px;
+  background-color: #8f9aac;
+  width: 7px;
+  height: 7px; }
+
+.pythia .py-indicator__circle:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.pythia .py-indicator__act {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8f9aac; }
+  .pythia .py-indicator__act:hover {
+    text-decoration: none; }
+  @media screen and (min-width: 48em) {
+    .pythia .py-indicator__act {
+      font-size: 14px; } }
+
+.pythia .py-indicator ul li.py-active .py-indicator__circle {
+  border: 2px dashed #19d69b; }
+.pythia .py-indicator ul li.py-active .py-indicator__circle::before {
+  background-color: #19d69b; }
+.pythia .py-indicator ul li.py-active .py-indicator__act {
+  color: #19d69b; }
+.pythia .py-indicator ul li.py-passed .py-indicator__circle::before {
+  background-color: #19d69b; }
+
+.box-white {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 37px 33px;
+  border-radius: 5px; }
+
+.pythia h1,
+.h1 {
+  font-size: 2.5rem; }
+
+.pythia h3,
+.pythia .h3 {
+  font-size: 1.75rem; }
+
+.pythia h4,
+.pythia .h4 {
+  font-size: 1.5rem; }
+
+.pythia h5,
+.pythia .h5 {
+  font-size: 1.25rem; }
+
+.pythia h6,
+.pythia .h6 {
+  font-size: 1rem; }
+
+.pythia .pytitle-green {
+  color: #19d69b;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 1.4rem; }
+
+.pythia .pylist-icons ul,
+.pythia .pylist-icons li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.pythia .pylist-icons li {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem; }
+
+.pythia .pylist-icons__img {
+  float: left;
+  width: 40px;
+  margin: 0;
+  margin-right: 15px; }
+
+.pythia .py-content {
+  margin-bottom: 37px;
+  display: flex; }
+
+.pythia .py-alert {
+  color: #32373C;
+  background-color: white;
+  padding: .5rem 1.25rem;
+  border-radius: 0;
+  max-width: 406px;
+  width: 100%;
+  font-size: 13px;
+  position: fixed;
+  top: 36px;
+  right: 0;
+  border-left: 5px solid;
+  z-index: 1; }
+  .pythia .py-alert > span {
+    line-height: 1.3em; }
+  @media screen and (min-width: 62em) {
+    .pythia .py-alert {
+      max-width: 470px; } }
+  .pythia .py-alert.py-alert-success {
+    border-left: 5px solid #19d69b; }
+    .pythia .py-alert.py-alert-success span::before {
+      color: #19d69b; }
+    .pythia .py-alert.py-alert-success .py-success-message {
+      vertical-align: text-bottom; }
+  .pythia .py-alert.py-alert-error {
+    border-left: 5px solid #e51a2e; }
+    .pythia .py-alert.py-alert-error span::before {
+      color: #e51a2e; }
+    .pythia .py-alert.py-alert-error .py-error-message {
+      vertical-align: text-bottom; }
+
+.pythia .py-alert__icon {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 8px; }
+
+.pythia .py-keyz {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #bbbbbb;
+  color: white;
+  word-wrap: break-word; }
+.pythia .py-keyz__icon {
+  width: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaaaaa;
+  text-align: center;
+  flex: 0 0 80px;
+  max-width: 80px; }
+  .pythia .py-keyz__icon img {
+    width: 45px; }
+.pythia .py-keyz__main {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px;
+  display: block;
+  max-width: 92%;
+  overflow: hidden; }
+  .pythia .py-keyz__main span {
+    display: block; }
+
+/* Steps js Custom*/
+.js-pyStepz__title {
+  display: none; }
+
+.py-stepz .steps .number {
+  display: none; }
+.py-stepz .steps .current-info {
+  display: none; }
+.py-stepz .steps ul li a:hover {
+  text-decoration: none; }
+.py-stepz .steps ul li.current .py-indicator__circle::before {
+  background-color: #19d69b; }
+.py-stepz .steps ul li.current .py-indicator__act {
+  color: #19d69b; }
+.py-stepz .steps ul li.done .py-indicator__circle::before {
+  background-color: #19d69b; }
+.py-stepz .steps a:hover {
+  text-decoration: none; }
+
+.pythia ul.py-step-action {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0; }
+  @media screen and (min-width: 62em) {
+    .pythia ul.py-step-action {
+      margin: 0 -15px 40px; } }
+  .pythia ul.py-step-action li {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 15px; }
+    .pythia ul.py-step-action li:first-child {
+      text-align: left; }
+      .pythia ul.py-step-action li:first-child > a {
+        background: transparent;
+        color: #e27233;
+        box-shadow: none;
+        padding: 0;
+        min-width: auto;
+        font-weight: 500; }
+        .pythia ul.py-step-action li:first-child > a:hover {
+          text-decoration: underline; }
+        .pythia ul.py-step-action li:first-child > a:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 4px; }
+  @media screen and (max-width: 62em) {
+    .pythia ul.py-step-action li {
+      text-align: center !important; } }
+
+/*Error Alert*/
+.form-content .form-group label.error {
+  display: block !important;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400 !important;
+  color: #e51a2e;
+  margin-top: 0px; }
+
+.form-content .form-group input.form-control.error {
+  box-shadow: 0 0 0 0.2rem #e51a2e; }
+
+button button:focus {
+  outline: none;
+  box-shadow: none !important; }
+
+/*Preloader */
+@media (max-height: 3000px) {
+  .pythia .se-pre-con {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(26, 43, 54, 0.8) url("../img/loading.svg") center center no-repeat;
+    background-size: 80px auto; } }
+@media (max-height: 1000px) {
+  .pythia .se-pre-con {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(26, 43, 54, 0.8) url("../img/loading.svg") center center no-repeat;
+    background-size: 80px auto;
+    background-position-y: 44vh; } }
+.pythia .sign-up {
+  background-image: url(../img/androide.png);
+  background-size: 480px;
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-position-y: 100%;
+  min-height: 550px; }
+  .pythia .sign-up .form-content {
+    float: left;
+    display: inline-block; }
+  .pythia .sign-up .welcome {
+    display: inline-block;
+    padding-left: 3%; }
+    .pythia .sign-up .welcome h2 {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 36px;
+      color: white; }
+    .pythia .sign-up .welcome p {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #8398AA; }
+
+@media (max-width: 767px) {
+  .pythia .sign-up {
+    background-image: none;
+    background-size: 0px; }
+
+  .sign-up .col-md-10.col-12 {
+    display: contents; }
+    .sign-up .col-md-10.col-12 .form-content {
+      order: 2; }
+    .sign-up .col-md-10.col-12 .welcome {
+      order: 1; } }
+.pythia .content-center-py {
+  text-align: center; }
+  .pythia .content-center-py .group-register.w-330 {
+    max-width: 330px;
+    margin: 0 auto;
+    position: relative; }
+    .pythia .content-center-py .group-register.w-330 .btn-py {
+      margin: 50px auto; }
+      .pythia .content-center-py .group-register.w-330 .btn-py.disabled {
+        margin: 20px auto; }
+        .pythia .content-center-py .group-register.w-330 .btn-py.disabled:hover {
+          background: #19d69b; }
+    .pythia .content-center-py .group-register.w-330 .btn-dark-py {
+      margin: 50px auto; }
+    .pythia .content-center-py .group-register.w-330 label {
+      display: block;
+      color: #7E8993;
+      font-size: 14px;
+      text-align: left; }
+    .pythia .content-center-py .group-register.w-330 select {
+      border: none;
+      height: 44px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #32373C;
+      max-width: 330px; }
+      .pythia .content-center-py .group-register.w-330 select:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem #19d69b; }
+      .pythia .content-center-py .group-register.w-330 select.error:focus {
+        box-shadow: 0 0 0 0.2rem #e51a2e; }
+    .pythia .content-center-py .group-register.w-330 .form-control:disabled,
+    .pythia .content-center-py .group-register.w-330 .form-control[readonly] {
+      background-color: #e9ecef;
+      opacity: 0.5;
+      height: 44px; }
+  .pythia .content-center-py button, .pythia .content-center-py a {
+    margin: 20px auto; }
+  .pythia .content-center-py a {
+    line-height: 32px; }
+    .pythia .content-center-py a:hover {
+      color: #0e1b26; }
+
+.pythia .su-completed .row.justify-content-center {
+  background: linear-gradient(180deg, rgba(14, 27, 38, 0) 15.25%, rgba(14, 27, 38, 0.3) 22.54%, rgba(14, 27, 38, 0.7) 28.27%, #0E1B26 39.21%);
+  height: 800px;
+  z-index: 99; }
+  .pythia .su-completed .row.justify-content-center .bg-androide {
+    background-image: url(../img/androide2.png);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 400px; }
+  .pythia .su-completed .row.justify-content-center .col-md-8.col-12.text-center {
+    position: absolute;
+    top: 360px; }
+    .pythia .su-completed .row.justify-content-center .col-md-8.col-12.text-center img {
+      width: 200px;
+      margin-bottom: 5px; }
+    .pythia .su-completed .row.justify-content-center .col-md-8.col-12.text-center h2 {
+      margin-bottom: 20px; }
+
+.pythia .settings .col-md-6 {
+  max-width: 460px; }
+  .pythia .settings .col-md-6 h2 {
+    margin-bottom: 10px;
+    text-align: center; }
+  .pythia .settings .col-md-6 .group-label {
+    display: flex;
+    border-bottom: 1px solid #2E4757;
+    align-items: center;
+    min-height: 60px;
+    padding: 5px 0px; }
+    .pythia .settings .col-md-6 .group-label label {
+      color: #8398AA;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      width: 200px;
+      text-align: left;
+      margin-bottom: 0px;
+      text-transform: capitalize; }
+    .pythia .settings .col-md-6 .group-label span {
+      color: white;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%;
+      margin-left: 10px; }
+    .pythia .settings .col-md-6 .group-label .form-control {
+      width: 60px; }
+
+/*# sourceMappingURL=main.css.map */
